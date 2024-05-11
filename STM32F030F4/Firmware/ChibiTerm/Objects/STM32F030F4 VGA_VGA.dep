@@ -1,0 +1,76 @@
+Dependencies for Project 'STM32F030F4 VGA', Target 'VGA': (DO NOT MODIFY !)
+CompilerVersion: 6210000::V6.21::ARMCLANG
+F (.\startup_stm32f030.s)(0x663E8E3D)(--cpu Cortex-M0 -g --diag_suppress=A1950W-I"C:\Users\ralf\Program Files\Keil_v5\ARM\RV31\INC"-I"C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include"-I"C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx"--pd "__UVISION_VERSION SETA 539"--list .\listings\startup_stm32f030.lst--xref -o .\objects\startup_stm32f030.o--depend .\objects\startup_stm32f030.d)
+F (.\vga-min.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/vga-min.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (hardware.hapio.hogafont.h)(0x00000000)
+F (.\serial.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/serial.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (fifo.hrga-min.hrardware.hepio.h)(0x00000000)
+F (.\fifo.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/fifo.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (vga-min.h)(0x663E8E3D)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (hardware.hapio.h)(0x00000000)
+F (.\ps2.c)(0x663FD497)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/ps2.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\string.h)(0x656A0472)
+I (ps2.he:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x00000000)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (gpio.hrifo.hfga-min.h ardware.hls2 table.hCerial.h3nsi.h)(0x00000000)
+I (ps2 table.c)(0x663FD497)
+F (.\rcc.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/rcc.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (hardware.hapio.h)(0x00000000)
+F (.\term.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/term.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (hardware.hapio.honsi.hFerial.hiifo.hAs2.h)(0x00000000)
+F (.\ansi.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/ansi.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\string.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x656A0472)
+I (vga-min.h)(0x663E8E3D)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\stm32f0xx.h)(0x559D3550)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\INC\ST\STM32F0xx\system_stm32f0xx.h)(0x559D3550)
+I (hardware.hapio.honsi.hFerial.hiifo.hAs2.hNgafont.h)(0x00000000)
+F (.\vgafont.c)(0x663E8E3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I"C:/Users/ralf/Program Files/Keil_v5/ARM/RV31/INC"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/CMSIS/Include"-I"C:/Users/ralf/Program Files/Keil_v5/ARM/INC/ST/STM32F0xx"-D__UVISION_VERSION="539" -DSTM32F030-o ./objects/vgafont.o -MD)
+I (C:\Users\ralf\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (vgafont.hrga16.fnt.c)(0x00000000)
