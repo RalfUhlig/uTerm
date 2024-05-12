@@ -53,7 +53,11 @@ static volatile PS2_IF_t PS2_IF;
 static PS2_State_t PS2_Fsm;
 static uint8_t PS2_Cmd,PS2_Cmd_Arg;
 
+#ifdef KBD_LAYOUT_GER
+#include "ps2 table german.c"
+#else
 #include "ps2 table.c"
+#endif
 
 void PS2_Init(void)
 {
@@ -244,8 +248,10 @@ static void Key_Up(uint8_t key)
 		c=Lookup_Key(Escaped_Regular,COUNTOF(Escaped_Regular),key);
 	}
 	else {
-		if ((Modifiers&SHIFT_MODIFIER || Modifiers&FAKESHIFT_MODIFIER))
+		if ((Modifiers&SHIFT_MODIFIER) || (Modifiers&FAKESHIFT_MODIFIER))
 			c=Remap_Key(Shifted_Regular,COUNTOF(Shifted_Regular),key); 
+		else if (Modifiers&ALTGR_MODIFIER)
+			c=Remap_Key(Alted_Regular,COUNTOF(Alted_Regular),key); 
 		else
 			c=Remap_Key(Unshifted_Regular,COUNTOF(Unshifted_Regular),key);
 	}
@@ -262,6 +268,9 @@ static void Key_Up(uint8_t key)
     case LEFT_ALT_KEY:
       Modifiers&=~ALT_MODIFIER;
       return;
+    case RIGHT_ALT_KEY:
+      Modifiers&=~ALTGR_MODIFIER;
+      return;
     case FAKE_LSHIFT_KEY:
     case FAKE_RSHIFT_KEY:
       Modifiers&=~FAKESHIFT_MODIFIER;
@@ -273,10 +282,18 @@ static void Key_Down(uint8_t key)
 {
 uint8_t c;
 	key=Remap_Key(Scancode_Translations,COUNTOF(Scancode_Translations),key);
-	if ((Modifiers&SHIFT_MODIFIER || Modifiers&FAKESHIFT_MODIFIER))
-		c=Remap_Key(Shifted_Regular,COUNTOF(Shifted_Regular),key); 
-	else
-		c=Remap_Key(Unshifted_Regular,COUNTOF(Unshifted_Regular),key);
+	if (Modifiers&EXTEND_MODIFIER) 
+	{
+		c=Lookup_Key(Escaped_Regular,COUNTOF(Escaped_Regular),key);
+	}
+	else {
+		if ((Modifiers&SHIFT_MODIFIER) || (Modifiers&FAKESHIFT_MODIFIER))
+			c=Remap_Key(Shifted_Regular,COUNTOF(Shifted_Regular),key); 
+		else if (Modifiers&ALTGR_MODIFIER)
+			c=Remap_Key(Alted_Regular,COUNTOF(Alted_Regular),key); 
+		else
+			c=Remap_Key(Unshifted_Regular,COUNTOF(Unshifted_Regular),key);
+  }
 	if (!c)
 	  return;
   switch (c) 
@@ -290,7 +307,10 @@ uint8_t c;
       Modifiers|=SHIFT_MODIFIER;
       return;
     case LEFT_ALT_KEY:
-      Modifiers|=ALT_MODIFIER;
+			Modifiers|=ALT_MODIFIER;
+		  return;
+    case RIGHT_ALT_KEY:
+		  Modifiers|=ALTGR_MODIFIER;
       return;
     case CAPS_LOCK_KEY:
       Modifiers^=CAPSLOCK_MODIFIER;
@@ -309,7 +329,6 @@ uint8_t c;
       Modifiers|=FAKESHIFT_MODIFIER;
       return;
     case CONTROL_PRINTSCREEN_KEY:
-    case RIGHT_ALT_KEY:
     case CONTROL_BREAK_KEY:
       break;
     default:
