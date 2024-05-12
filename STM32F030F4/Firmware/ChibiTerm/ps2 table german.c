@@ -129,7 +129,7 @@ const uint8_t Unshifted_Regular[] =
  KEYPAD_KEY,// (Keypad-./Del) # 53
  0,// (Alt-SysRq) on a 84+ key keyboard # 54
  0,// less common # 55
- 0, //unlabelled key to the left or to the right of the left Alt key (Windos key?) #56
+ '<', // (<>|) on a 105-key keyboard #56
  F11_KEY, // F11 # 57
  F12_KEY // F12 # 58
  // anything with higher number is not standard and not recognized
@@ -223,7 +223,7 @@ const uint8_t Shifted_Regular[] =
  KEYPAD_KEY,// (Keypad-./Del) # 53
  0,// (Alt-SysRq) on a 84+ key keyboard # 54
  0,// less common # 55
- 0, //unlabelled key to the left or to the right of the left Alt key (Windos key?) #56
+ '>', // (<>|) on a 105-key keyboard #56
  F11_KEY, // F11 # 57
  F12_KEY // F12 # 
  // anything with higher number is not standard and not recognized
@@ -316,7 +316,7 @@ const uint8_t Alted_Regular[] = {
  KEYPAD_KEY,// (Keypad-./Del) # 53
  0,// (Alt-SysRq) on a 84+ key keyboard # 54
  0,// less common # 55
- 0, //unlabelled key to the left or to the right of the left Alt key (Windos key?) #56
+ '|', // (<>|) on a 105-key keyboard #56
  F11_KEY, // F11 # 57
  F12_KEY // F12 # 58
  // anything with higher number is not standard and not recognized
